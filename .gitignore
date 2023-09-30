@@ -1,0 +1,13 @@
+# backup and temporary files
+*~
+
+# patches and related files
+*.orig
+*.patch
+*.rej
+
+# html files (as generated from markdown)
+*.html
+
+# Mac OS X folder settings file
+.DS_Store
