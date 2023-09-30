@@ -14,7 +14,7 @@ var (
     address    string = "http://192.168.1.1/rest"
 )
 func example(){
-	c, err := N(address, WithRequestEditorFn(func(ctx context.Context, req *http.Request) error {
+	c, err := NewCient(address, WithRequestEditorFn(func(ctx context.Context, req *http.Request) error {
 		req.SetBasicAuth(username, password)
 		return nil
 	}))
