@@ -1,5 +1,5 @@
 // routerOs/routerOsDebugger/cmd.go
-package routerOsSDK
+package RouterOsSDK
 import (
 	"context"
 	"errors"
