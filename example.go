@@ -6,8 +6,6 @@ import (
 	"fmt"
 	"net/http"
 	"os"
-
-	RouterOsSDK "github.com/kmoz000/routerOsSDK"
 	"github.com/spf13/cobra"
 )
 var (
@@ -16,7 +14,7 @@ var (
     address    string = "http://192.168.1.1/rest"
 )
 func example(){
-	c, err := RouterOsSDK.NewCient(address, RouterOsSDK.WithRequestEditorFn(func(ctx context.Context, req *http.Request) error {
+	c, err := NewCient(address, RouterOsSDK.WithRequestEditorFn(func(ctx context.Context, req *http.Request) error {
 		req.SetBasicAuth(username, password)
 		return nil
 	}))
