@@ -126922,7 +126922,7 @@ func (r GETSystemScriptJobIdResponse) StatusCode() int {
 type POSTSystemScriptPrintResponse struct {
 	Body         []byte
 	HTTPResponse *http.Response
-	JSON200      *string
+	JSON200      *map[string]interface{}
 	JSON400      *map[string]interface{}
 	JSON401      *map[string]interface{}
 }
